@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+
+background: #ffffff;
+font-family: 'Open Sans', sans-serif;
+color: #333333;
+margin: 0;
+padding: 0;
+}
+
+
+p
+{
+line-height: 25px;
+background: #fffeff;
+padding: 7px;
+margin: 0px;
+font-size: 12px;
+}
+
+
+h1 {
+	color: #edb210;
+	padding: 0 0 0 20;
+}
+
+
+li {
+	text-color: #edb210;
+}
+	
+
+.content {
+	margin: auto;
+	text-align: center;
+}
+
+.compose {
+	margin: auto;
+
+}
+
+.composeh1 {
+	color: #ffffff;
+	background: #222222;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+}
+
+.yourname {
+	color: #ffffff;
+	background: #222222;
+	font-size: 14px;
+	padding: 5px;
+	text-align: left;
+}
+
+.yourtweet {
+	color: #000000;
+	font-size: 14px;
+	padding: 5px;
+	margin: 5px;
+	text-align: left;
+}
+
+.yourdate {
+	color: #888888;
+	font-size: 11px;
+	padding: 5px;
+	margin: 5px;
+	text-align: left;
+}
+
+.tweetd {
+	color: #ffffff;
+	background: #222222;
+	font-size: 14px;
+	padding: 5px;
+	text-align: left;
+}
+
+.tweettext {
+	color: #000000;
+	font-size: 14px;
+	padding: 5px;
+	margin: 5px;
+	text-align: left;
+}
+
+.tweetdate {
+	color: #000000;
+	font-size: 11px;
+	padding: 5px;
+	margin: 5px;
+	text-align: left;
+}	
+
+/*  MESSAGING  */
+
+.container {
+	display: inline-flex;
+}
+
+.banner {
+	width: 100%;
+}
+
+.pic {
+	background: #222222;
+	vertical-align: top;
+}
+
+.Name {
+	float: left;
+	color: #ffffff;
+	background: #222222;
+	font-size: 14px;
+	padding: 5;
+	text-align: left;
+	width: 100%;
+}
+
+.sName {
+	color: #888888;
+	background: #222222;
+	font-size: 14px;
+	padding: 5;
+	text-align: left;
+}
+
+.desc {
+	text-align: left;
+	padding: 5;
+	background: #dddddd;
+	margin: 5 0 0 0;
+}
+
+.loc {
+	text-align: left;
+	padding: 5;
+}
+
+.friends {
+	text-align: left;
+	padding: 5;
+}
+
+.follow {
+	text-align: left;
+	padding: 5;
+}
+
+.last {
+	text-align: left;
+	padding: 5;
+}
+
+.accCreated {
+	text-align: left;
+	padding: 5;
+}
+
+
+/*  COLUMN SETUP  */
+.col {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: auto;
+	background: #ffffff;
+	width: 50%;
+}
+
