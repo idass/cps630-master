@@ -133,7 +133,7 @@ io.sockets.on('connection', function (socket) {
         post = JSON.stringify(response.postTweet);
         console.log(post);
 
-        res.redirect('process.env.PORT');
+        res.redirect(process.env.PORT);
    
    
         T.post('statuses/update', { status: post }, function(err, data, response) {
@@ -159,7 +159,7 @@ io.sockets.on('connection', function (socket) {
              name = JSON.stringify(response.name);
          }
    
-        res.redirect('process.env.PORT');
+        res.redirect(process.env.PORT);
    
         
      
@@ -201,7 +201,7 @@ io.sockets.on('connection', function (socket) {
         
 }else if (buttonValue == "stat") {
         
-        res.redirect('http://127.0.0.1:8081/stats.html');
+        res.redirect(process.env.PORT);
             
         var query2 = connection.query('SELECT `search`, COUNT(`search`) AS `value_occurrence` FROM `twitApp` GROUP BY `search` ORDER BY `value_occurrence` DESC LIMIT  1',function(err,result,response){
                         if (err) {
@@ -222,7 +222,7 @@ io.sockets.on('connection', function (socket) {
                         //console.log(query2);
     }else if (buttonValue == "userStat") {
         
-         res.redirect('http://127.0.0.1:8081/stats.html');
+         res.redirect(process.env.PORT);
          
          var query3 = connection.query('SELECT `sName` FROM `users` WHERE `followers` = (SELECT MAX(`followers`) FROM `users`)',function(err,result,response){
             if (err) {
