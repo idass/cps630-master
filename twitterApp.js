@@ -98,7 +98,7 @@ io.sockets.on('connection', function (socket) {
              cnt =  JSON.parse(response.counts);
          }
    
-        res.redirect('https://twittercrawler-cps630.herokuapp.com/');
+        res.redirect('https://twittercrawler-cps630.herokuapp.com/index.html');
    
         //console.log(count);
         //res.end(JSON.stringify(response));
