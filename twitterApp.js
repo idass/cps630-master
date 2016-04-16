@@ -89,7 +89,7 @@ io.sockets.on('connection', function (socket) {
              cnt =  JSON.parse(response.counts);
          }
    
-        res.redirect('http://127.0.0.1:8081');
+        res.redirect(process.env.PORT);
    
         //console.log(count);
         //res.end(JSON.stringify(response));
@@ -133,7 +133,7 @@ io.sockets.on('connection', function (socket) {
         post = JSON.stringify(response.postTweet);
         console.log(post);
 
-        res.redirect('http://127.0.0.1:8081/tweets.html');
+        res.redirect('process.env.PORT');
    
    
         T.post('statuses/update', { status: post }, function(err, data, response) {
@@ -159,7 +159,7 @@ io.sockets.on('connection', function (socket) {
              name = JSON.stringify(response.name);
          }
    
-        res.redirect('http://127.0.0.1:8081/messages.html');
+        res.redirect('process.env.PORT');
    
         
      
