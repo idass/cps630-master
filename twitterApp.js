@@ -160,7 +160,7 @@ io.sockets.on('connection', function (socket) {
              name = JSON.stringify(response.name);
          }
    
-        res.redirect('https://twittercrawler-cps630.herokuapp.com/');
+        res.redirect(server.address().port);
    
         
      
