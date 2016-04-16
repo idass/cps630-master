@@ -41,7 +41,7 @@ var options = {
   path: '/',
   //since we are listening on a custom port, we need to specify it by hand
   //This is what changes the request to a POST request
-  method: 'POST'
+ // method: 'POST'
 };
 
 app.use(express.static('./stylesheet'));
