@@ -36,6 +36,14 @@ server.listen(process.env.PORT || 8081, function(){
   console.log('or',process.env.PORT);
 });
 
+var options = {
+  host: 'https://twittercrawler-cps630.herokuapp.com',
+  path: '/',
+  //since we are listening on a custom port, we need to specify it by hand
+  //This is what changes the request to a POST request
+  method: 'POST'
+};
+
 app.use(express.static('./stylesheet'));
 app.use(express.static('./img'));
 
@@ -160,7 +168,7 @@ io.sockets.on('connection', function (socket) {
              name = JSON.stringify(response.name);
          }
    
-        res.redirect(server.address().port);
+        res.redirect(options);
    
         
      
