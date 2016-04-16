@@ -14,7 +14,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node twitterApp.js"
+    "start": "node twitterApp.js"
   },
   "repository": {
     "type": "git",
