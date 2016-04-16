@@ -33,6 +33,7 @@ var T = new Twit({
 
 server.listen(process.env.PORT || 8081, function(){
   console.log('listening on', server.address().port);
+  console.log('or',process.env.PORT);
 });
 
 app.use(express.static('./stylesheet'));
