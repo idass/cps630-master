@@ -4,6 +4,7 @@
   "description": "cps630 project",
   "main": "twitterApp.js",
   "dependencies": {
+    "node": "^4.4.3",
     "body-parser": "^1.15.0",
     "jade": "^1.11.0",
     "express": "^4.13.4",
