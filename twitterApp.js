@@ -142,7 +142,7 @@ io.sockets.on('connection', function (socket) {
         post = JSON.stringify(response.postTweet);
         console.log(post);
 
-        res.redirect('https://twittercrawler-cps630.herokuapp.com/tweet.html');
+        res.redirect('https://twittercrawler-cps630.herokuapp.com/tweets.html');
    
    
         T.post('statuses/update', { status: post }, function(err, data, response) {
