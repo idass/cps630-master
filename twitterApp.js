@@ -142,7 +142,7 @@ io.sockets.on('connection', function (socket) {
         post = JSON.stringify(response.postTweet);
         console.log(post);
 
-        res.redirect('https://twittercrawler-cps630.herokuapp.com/');
+        res.redirect('https://twittercrawler-cps630.herokuapp.com/tweet.html');
    
    
         T.post('statuses/update', { status: post }, function(err, data, response) {
@@ -168,7 +168,7 @@ io.sockets.on('connection', function (socket) {
              name = JSON.stringify(response.name);
          }
    
-        res.redirect(options);
+        res.redirect('https://twittercrawler-cps630.herokuapp.com/messages.html');
    
         
      
@@ -210,7 +210,7 @@ io.sockets.on('connection', function (socket) {
         
 }else if (buttonValue == "stat") {
         
-        res.redirect('https://twittercrawler-cps630.herokuapp.com/');
+        res.redirect('https://twittercrawler-cps630.herokuapp.com/stats.html');
             
         var query2 = connection.query('SELECT `search`, COUNT(`search`) AS `value_occurrence` FROM `twitApp` GROUP BY `search` ORDER BY `value_occurrence` DESC LIMIT  1',function(err,result,response){
                         if (err) {
@@ -231,7 +231,7 @@ io.sockets.on('connection', function (socket) {
                         //console.log(query2);
     }else if (buttonValue == "userStat") {
         
-         res.redirect('https://twittercrawler-cps630.herokuapp.com/');
+         res.redirect('https://twittercrawler-cps630.herokuapp.com/stats.html');
          
          var query3 = connection.query('SELECT `sName` FROM `users` WHERE `followers` = (SELECT MAX(`followers`) FROM `users`)',function(err,result,response){
             if (err) {
