@@ -9,9 +9,9 @@ var mysql = require('mysql');
 
 var connection = mysql.createConnection({
     host: 'sql5.freemysqlhosting.net',
-    user: 'sql5115151',
-    password: 'iZauazDTDG',
-    database: 'sql5115151'
+    user: 'sql5116689',
+    password: 'XpPFqLje6r',
+    database: 'sql5116689'
 });
 
 connection.connect();
@@ -122,7 +122,7 @@ io.sockets.on('connection', function (socket) {
                         date: JSON.stringify(data.statuses[i].created_at)
                     };
                 
-                    var query = connection.query('insert into sql5115151.twitApp set ?',tweet,function(err,result){
+                    var query = connection.query('insert into sql5116689.twitApp set ?',tweet,function(err,result){
                         if (err) {
                             console.error(err);
                         }
@@ -199,7 +199,7 @@ io.sockets.on('connection', function (socket) {
                         created: JSON.stringify(data[0].created_at)
                     };
                     
-                    var query = connection.query('insert into sql5115151.users set ?',user,function(err,result){
+                    var query = connection.query('insert into sql5116689.users set ?',user,function(err,result){
                         if (err) {
                             console.error(err);
                         }
